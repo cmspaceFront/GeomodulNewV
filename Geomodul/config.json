@@ -1,0 +1,72 @@
+{
+  "rootId": "monitoring-table",
+  "name": "monitoring-table",
+  "label": "Masofaviy monitoring moduli",
+  "version": "1.1.0",
+  "type": "widget",
+  "exbVersion": "1.11.0",
+  "author": "you",
+  "description": "Combined monitoring table and object details — list from backend API with inline detail view on row click",
+  "properties": {
+    "hasSettingPage": true,
+    "hasStyle": true
+  },
+  "style": {
+    "styleConfig": {
+      "useCustom": {
+        "type": "boolean"
+      }
+    }
+  },
+  "propertiesConfig": {
+    "apiBaseUrl": {
+      "type": "string",
+      "title": "API Base URL",
+      "description": "Base URL for geomonitoring API (Swagger: /docs)",
+      "default": "https://api-geo.spacemc.uz"
+    },
+    "apiUsername": {
+      "type": "string",
+      "title": "API Username",
+      "description": "Login for POST /api/users/login",
+      "default": ""
+    },
+    "apiPassword": {
+      "type": "string",
+      "title": "API Password",
+      "description": "Password for POST /api/users/login",
+      "default": ""
+    },
+    "apiToken": {
+      "type": "string",
+      "title": "Manual JWT",
+      "description": "Optional JWT override — skips /api/users/login when set",
+      "default": ""
+    },
+    "enablePagination": {
+      "type": "boolean",
+      "title": "Enable Pagination",
+      "description": "Enable pagination for the table",
+      "default": true
+    },
+    "itemsPerPage": {
+      "type": "number",
+      "title": "Items Per Page",
+      "description": "Number of items to display per page",
+      "default": 20
+    },
+    "useInlineDetail": {
+      "type": "boolean",
+      "title": "Open details in widget",
+      "description": "When enabled, clicking a row opens object details inside this widget instead of navigating to another page",
+      "default": true
+    },
+    "statusPulseSeconds": {
+      "type": "number",
+      "title": "Status dots animation (seconds)",
+      "description": "How long the UZCOSMOS/GEOLOGIYA status dots pulse after the table renders; 0 disables the animation",
+      "default": 4.5
+    }
+  }
+}
+
