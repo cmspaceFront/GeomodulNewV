@@ -1,9 +1,10 @@
 {
   "name": "Geomodul",
+  "type": "widget",
   "label": "Geomodul",
   "description": "Combined monitoring table and object details — list from backend API with inline detail view on row click",
   "version": "1.1.0",
-  "exbVersion": "1.11.0",
+  "exbVersion": "1.18.0",
   "author": "Ilkhom Khamdamov",
   "icon": "icon.svg",
   "properties": {
